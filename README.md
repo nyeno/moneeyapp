@@ -1,68 +1,33 @@
 # Moneey App take-home
 This is my submission for the MoneeyApp take-home assessment. 
 
-**Link to project:** <a href="https://taeyang-planet-facts.netlify.app/" target="_blank">View here</a>
+**Link to project:** <a href="https://nyenoke-moneeyapp.netlify.app/" target="_blank">View here</a>
 
 
 
-Small Screen View          |  Meduim screen view       | Large Screen View            | 
-:-------------------------:|:-------------------------:|:-------------------------:|
-![](https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/phone.png)  |  ![](https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/tab.png)| ![](https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/large.png) 
+Profile Page for large screen         |  Login Page for large screen       
+:------------------------------------:|:-------------------------:|
+![](https://github.com/nyeno/HNG/blob/main/captures/moneyappmainpagelargescreen.png)  |  ![](https://github.com/nyeno/HNG/blob/main/captures/moneeyapplargescreen.png)
 
-
+Profile Page for small screen         |  Login Page for small screen       
+:------------------------------------:|:-------------------------:|
+![](https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/phone.png)  |  ![](https://github.com/nyeno/HNG/blob/main/captures/loginmoneeyappsmallscreen.png)
 
 
 ## How It's Made:
 
-**Tech used:**  ![JAVASCRIPT BADGE](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=blac)![REACT BADGE](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)![HTML BADGE](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![CSS BADGE](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)![STYLED COMPONENTS BADGE](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)![REACT ROUTER BADGE](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+**Tech used:**  ![TYPESCRIPT BADGE](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=)![REACT BADGE](https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=)![TAILWIND BADGE](https://img.shields.io/static/v1?style=for-the-badge&message=Tailwind+CSS&color=222222&logo=Tailwind+CSS&logoColor=06B6D4&label=)![APPOLO CLIENT BADGE](https://img.shields.io/static/v1?style=for-the-badge&message=Apollo+GraphQL&color=311C87&logo=Apollo+GraphQL&logoColor=FFFFFF&label=)![GRAPHQL BADGE](https://img.shields.io/static/v1?style=for-the-badge&message=GraphQL&color=E10098&logo=GraphQL&logoColor=FFFFFF&label=)
 
-This project uses React to create a beautiful site to highlight the surface geology, internal structure and general overview of the planets in our solar system. My learning was focused on understanding the fundamentals of React as a library. I also focused on creating a responsive yet beautiful site that follows the design specifications given. 
+This project uses React, TypeScript and GraphQL to fetch data from the SpaceX API. A figma file was provided which I tried to follow as much as I could
 
 
 ## Optimizations
 
-When I improve this project, I will refactor my components to be more reusale. I already refactored some elements like the buttons, typography, images, etc to be reusable but I would take it a bit further by making my components truly lean and focused. 
+When I improve this project, I hope to add proper error handling to catch errors that might occur while fetching data from the GraphQL Api
 
-## Lessons Learned:
+## Challenges Encountered:
 
-Because this is my first full React project, there are a lot of new technologies that I have learned. Styled Components, props in React, managing state and a lot more. The most interesting thing I learnt however, will be how to use Context API. I plan to dive deeper into the nuances of context API as well as Redux soon. 
+I encountered CORS issues while trying to fetch the data from the API. I tried different approaches to bypass the issue but ut lead to further issues. Eventually, I found a very easy to use proxy while perusing a Github Issue. The proxy is at https://corsproxy.io/
 
-## More Projects:
-Here are a couple more projects I have worked on
-
-<table bordercolor="#66b2b2">
-  <tr>
-    <td width="33.3%"  style="align:center;" valign="top">
-       To-do List App
-    </td>
-    <td width="33.3%" valign="top">
-        SunnySideAgency.org
-    </td>
-    <td width="33.3%" valign="top">
-        Tip Calculator
-    </td>
-  </tr>
-  <tr>
-    <td width="33.3%"  style="align:center;" valign="top">
-        <a target="_blank" href="https://github.com/nyeno/Todo-List">To-do List</a>
-        <br />
-        <a target="_blank" href="https://todolistbytaeyang.web.app/">
-          <img src="https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/todo.png" width="100%" alt="To do List App"/>
-        </a>
-    </td>
-    <td width="33.3%" valign="top">
-        <a target="_blank" href="https://eno-sunnyside-agency.netlify.app/">SunnySide.org</a>
-        <br />
-        <a target="_blank" href="https://github.com/nyeno/Frontend-Mentor-Projects/tree/main/sunnyside-agency-landing-page-main/">
-          <img src="https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/dsk.jpg" width="100%" alt="SunnySide.org"/>
-        </a>
-    </td>
-    <td width="33.3%" valign="top">
-        <a target="_blank" href="https://eno-tip-calcualtor.netlify.app/">Tip Calculator</a>
-        <br />
-        <a target="_blank" href="https://github.com/nyeno/Frontend-Mentor-Projects/tree/main/tip-calculator-app-main">
-          <img src="https://github.com/nyeno/Frontend-Mentor-Projects/blob/main/tip-calculator-app-main/design/desktop-preview.jpg" width="100%" alt="Tip Calculator App"/>
-        </a>
-    </td>
-  </tr>
-</table>
+## Conclusion:
+I had a swell time building completing this tak home. I learnt more about CORS and how to handle it on the client side. This was an amazing learning opportunity
