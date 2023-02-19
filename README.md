@@ -11,7 +11,7 @@ Profile Page for large screen         |  Login Page for large screen
 
 Profile Page for small screen         |  Login Page for small screen       
 :------------------------------------:|:-------------------------:|
-![](https://github.com/nyeno/Planet-Fact-Site/blob/main/shots/phone.png)  |  ![](https://github.com/nyeno/HNG/blob/main/captures/loginmoneeyappsmallscreen.png)
+![](https://github.com/nyeno/HNG/blob/main/captures/mainpagemoneeyappsmallscreen.png)  |  ![](https://github.com/nyeno/HNG/blob/main/captures/loginmoneeyappsmallscreen.png)
 
 
 ## How It's Made:
@@ -30,4 +30,4 @@ When I improve this project, I hope to add proper error handling to catch errors
 I encountered CORS issues while trying to fetch the data from the API. I tried different approaches to bypass the issue but ut lead to further issues. Eventually, I found a very easy to use proxy while perusing a Github Issue. The proxy is at https://corsproxy.io/
 
 ## Conclusion:
-I had a swell time building completing this tak home. I learnt more about CORS and how to handle it on the client side. This was an amazing learning opportunity
+I had a swell time building completing this take home. I learnt more about CORS and how to handle it on the client side. This was an amazing learning opportunity
