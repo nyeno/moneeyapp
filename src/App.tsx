@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
+import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
+
+import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink} from '@apollo/client'
+import Profile from './pages/Profile';
+import Login from './pages/Login';
 
 function App() {
+
+  const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    //uri: "https://studio.apollographql.com/public/SpaceX-pxxbxen/explorer?variant=current",
+    link: new HttpLink({
+      uri: "https://corsproxy.io/?https://spacex-production.up.railway.app/"
+    }),
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+        <ApolloProvider client={client}>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route
+              path="/home"
+              element={
+                <ProtectedRoute>
+                  <Profile/>
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+        </ApolloProvider>
+      </AuthProvider>
     </div>
   );
 }
